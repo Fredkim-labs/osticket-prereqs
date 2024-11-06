@@ -168,4 +168,12 @@ Check the box for CGI and Click Ok
  ________________________________________________________________________________________________________________________________________________________
 </p>
 
+![image](https://github.com/user-attachments/assets/6eb27778-cc2c-422b-b130-cd699f1a8aa9)
+![image](https://github.com/user-attachments/assets/e853013b-e033-472b-9ef9-246af32aa3a4)
+<p>
+ If osTicket is properly installed, http://localhost/osTicket/scp/login.php and http://localhost/osTicket/ will be accessable
+</p>
+<p>
+ ________________________________________________________________________________________________________________________________________________________
+</p>
 <br />
