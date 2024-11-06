@@ -20,36 +20,68 @@ This will outline the installation process of the open-source help desk ticketin
 - Create a resource group to connect to the Microsft Azure Virtual
 - Create a Virtal Machine using Microsft Azure.
 - Install and Enable IIS
-
-  
-- Item 4
-- Item 5
+- Install PHP Manager
+- Install IIS URL Rewrite Module
+- Install VC_redist.x86.exe
+- Install MySQL Server
+- 
 
 <h2>Installation Steps</h2>
 
 ![image](https://github.com/user-attachments/assets/31942d6b-20f5-4057-9b44-f66dbc55ad3f)
-
 <p>
-Open the Control Panel and Open Programs Icon.
+Open the Control Panel and Click Programs Icon.
 </p>
 
+![image](https://github.com/user-attachments/assets/95927234-9016-45df-8830-4dfc3085650d)
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Click Turn Windows on or off
 </p>
-<br />
 
+![image](https://github.com/user-attachments/assets/598dabe8-32ee-4df0-ad8c-8cf8d1dd05be)
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Check the box for Internet Information Services (IIS)
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Expand IIS and Expand WorldWide Web Services, than Application Development Features
 </p>
-<br />
+<p>
+Check the box for CGI and Click Ok
+</p>
+ 
+![image](https://github.com/user-attachments/assets/bc40140c-329f-435f-aa4c-4327dadf6c8b)
+<p>
+ Install PHP Manager 
+</p>
 
+![image](https://github.com/user-attachments/assets/65bf05b2-2aba-4369-91e6-d2d4cbfb0fe2)
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  Install IIS URL Rewrite Module
+</p>
+
+![image](https://github.com/user-attachments/assets/20ea6756-8a07-4488-ae88-22b8b1fec5dd)
+<p>
+  Install VC_redist.x86.exe
+</p>
+
+![image](https://github.com/user-attachments/assets/d2803a59-0d04-4581-98ba-2016e8288028)
+![image](https://github.com/user-attachments/assets/35bb07a3-1665-40b6-8f00-20ed6131d017)
+<p>
+  Install MySQL Server
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  After installation completed. Click box to launch MySQL Configuration Wizard and click finish
 </p>
+
+
+![image](https://github.com/user-attachments/assets/d7076ca1-1697-4de4-a3f8-b743da75869c)
+![image](https://github.com/user-attachments/assets/e7ccde61-1170-4e88-ae29-1139612d26ed)
+<p>
+  Start the MySQL server Wizard
+</p>
+<p>
+  Create a password for the server
+</p>
+
+
 <br />
