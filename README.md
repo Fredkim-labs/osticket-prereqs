@@ -35,7 +35,7 @@ This will outline the installation process of the open-source help desk ticketin
 Open the Control Panel and Click Programs Icon.
 </p>
 <p>
- ______________________________________________________________________________________________________________
+ ______________________________________________________________________________________________________________________
 </p>
 
 ![image](https://github.com/user-attachments/assets/95927234-9016-45df-8830-4dfc3085650d)
