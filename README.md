@@ -35,7 +35,7 @@ This will outline the installation process of the open-source help desk ticketin
 Open the Control Panel and Click Programs Icon.
 </p>
 <p>
- ________________________________________________________________________________________________________________________________________________________
+ ______________________________________________________________________________________________________________
 </p>
 
 ![image](https://github.com/user-attachments/assets/95927234-9016-45df-8830-4dfc3085650d)
@@ -43,7 +43,7 @@ Open the Control Panel and Click Programs Icon.
 Click Turn Windows on or off
 </p>
 <p>
- ________________________________________________________________________________________________________________________________________________________
+ ______________________________________________________________________________________________________________
 </p>
 
 ![image](https://github.com/user-attachments/assets/598dabe8-32ee-4df0-ad8c-8cf8d1dd05be)
