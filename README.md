@@ -7,13 +7,13 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure Virtual Machine
 - Remote Desktop
 - Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10S</b> 
+- Windows 10</b> 
 
 <h2>List of Prerequisites</h2>
 
@@ -23,80 +23,90 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 - VC_redistx86
 - MySQL 5.5.62
 - Heidi SQL
-
-<img width="386" alt="1" src="https://github.com/user-attachments/assets/39c7d56c-ecdc-4d3b-a3ed-1fdec093ad96">
-
+  
 <h2>Installation Steps</h2>
 
 <p>
 </p>
 <p>
-<h3>&#9312; Create a Virtual Machine on Azure</h3>
-The first step is to create a Virtual Machine (VM) on Azure. 
-Choose the image or base operating machine as Windows 10 Pro, version 22H2.</p>
-<p>
-<img width="800" src="https://imgur.com/INXIICl.png">
+<h3>Create a Virtual Machine on Azure</h3>
 
-<p>
-</p>
-<p>
-<strong> NOTE: Make sure to set the size to either 2 or 4 vcpus and 16 GiB memory. 
-Confirm that RDP (3389) is allowed in "Select inbound ports" to allow Remote Desktop access to the VM.</strong> </p>
-<p>
-<img width="750" src="https://imgur.com/aTcFD7k.png">
-
-
-
-</p>
-<br />
-
-<p>
-</p>
-<p>
-<h3>&#9313; Review and Create </h3>
-<p>Click on the last check box to confirm an eligible Windows 10 license, then proceed to "Review + Create". A validation process will occur before being able to create.</p>
-
-</p>
-<br>
-<h3>&#9314; Find your VM's public IP address</h3>
-<p></p>Allow a small time window for your deployment to complete, then locate your VM's public IP address and copy it.</p>
-<p>
-<img width="700" src="https://imgur.com/9HWXoRu.png">
-
-
-</p>
-<p>
-<h3>&#9315; Connect to your VM using the Remote Desktop Connection app</h3>
-<p>Open your Remote Desktop Connection app and paste the VM's IP address, then login credentials used to create the VM.</p>
-<p>
-<img width="700" src="https://imgur.com/TL41GIq.png">
-
-
-</p>
-<br />
-<h3>&#9316; Enable IIS </h3>
-<p> Once the VM is open, we will need to install/enable IIS. Open Control Panel -> Programs -> Turn Windows features on or off</p>
-<p> <img width="750" src="https://imgur.com/Llx72Yj.png">
-
+![image](https://github.com/user-attachments/assets/b01d699d-3471-4e3f-92ba-bc2d62cc3ba3)
+<be><br>
   
+- The first step is to create a Virtual Machine (VM) on Azure.
+- Create a Resource Group - osTicket
+- Choose Windows 10 Pro, version 22H2.
+- Make sure to set the size to either 2 or 4 vcpus and 16 GiB memory. I chose 4 vcpus for better performance.
+
+
+![image](https://github.com/user-attachments/assets/756a4c35-ae2b-49c2-98b3-1e72874e57fc)
+<br><br>
+
+- Confirm that RDP (3389) is allowed in "Select inbound ports" to allow Remote Desktop access to the VM.</strong>
+- Click on the last check box to confirm a Windows 10 license, then proceed to "Review + Create". A validation process will occur before being able to create.
 </p>
-<p>Enable and expand the following features:</p>
-<p><img width="400" src="https://imgur.com/DdrwoVU.png">
+<p>
 </p>
-<p> [X] Internet Information Services</p>
-<p>[X] Web Management Tools </p>
-<p>[X] IIS Management Console </p>
-<p>[X] World Wide Web Services  </p>
-<p>[X] Application Development Features </p>
-<p>[X] CGI</p>
-<p>[X] Common HTTP Features</p>
+<br />
+
+<br>
+
+<p>
+<h3>Connect to your VM via the Remote Desktop Connection</h3>
+<p>
+  
+
+![image](https://github.com/user-attachments/assets/a8c2a856-eeb3-4e6a-9086-05b568a2da31)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/1b77fa69-3970-4465-86a2-dfc08230dfc3)
+<br><br>
+
+- Locate your VM's public IP address
+- Open Remote Desktop Connection and paste the VM's IP address, then log in.</p>
+<p>
+
+</p>
+<br />
+<h3>Download and Unzip Installation files</h3>
+
+![image](https://github.com/user-attachments/assets/63782d6c-68a2-4474-8e93-ca81daa7c7b0)
+<br><br>
+
+[Download zip file from here.](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD)
+- Unzip the files after the download is complete.
+
+<h3>Enable IIS </h3>
+
+![image](https://github.com/user-attachments/assets/57878805-3e92-4654-9e95-bd081b420017)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/5afd9e6e-2a4d-4816-beaf-c73431a1a276)
+<br><br>
+
+<p> - Once the VM is open, we will need to install/enable IIS. Open Control Panel, Programs and click on Turn Windows features on or off</p>
+
+
+<p><h2>Enable following features:</h2></p>
+
+![image](https://github.com/user-attachments/assets/d552924d-3e54-49ac-86d1-75b71f7ac56e)
+<br><br>
+
+- Enable Internet Information Services</p>
+- Expand World Wide Web Services </p>
+- Expand Application Development Features
+- Enable CGI
 <br>
 <p> Click okay and the features should be enabled.</p>
 <br>
-<p> <strong> NOTE: To test if the changes were applied succesfully, type "127.0.0.1" on your browser and this page below should appear. </strong></p>
-<img width="900" src="https://imgur.com/nqv8e9h.png">
+<p> <strong> NOTE: If the changes were applied successfully, type "127.0.0.1" in your browser, and this page below should appear. </strong></p>
+
+![image](https://github.com/user-attachments/assets/d8c21692-4789-461d-bb3b-2ba2f7722b56)
 <br> <br>
-<h3>&#9317; Download and Install PHP Manager</h3>
+
+<h3>Download and Install PHP Manager</h3>
+
 <p> Download and install PHP manager from the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> installation files </a>(PHPManagerForIIS_V1.5.0.msi) 
 </p> <br>
 <p><img width="386" src="https://imgur.com/DbU0lk6.png">
