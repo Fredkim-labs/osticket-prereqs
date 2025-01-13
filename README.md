@@ -105,56 +105,115 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 ![image](https://github.com/user-attachments/assets/d8c21692-4789-461d-bb3b-2ba2f7722b56)
 <br> <br>
 
-<h3>Download and Install PHP Manager</h3>
+<h3>Install PHP Manager</h3>
 
-<p> Download and install PHP manager from the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> installation files </a>(PHPManagerForIIS_V1.5.0.msi) 
-</p> <br>
-<p><img width="386" src="https://imgur.com/DbU0lk6.png">
-</p> 
+![image](https://github.com/user-attachments/assets/65e3458e-2db9-48e5-914b-a3faa38bd809)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/15844134-cf54-4648-93ef-ea53ee5519b8)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/2efc66e8-a1e1-425c-94d2-eef8b92da586)
+<br><br>
+
+<p> Install PHP manager from the osTicket Installation Files folder.
+
+
 <br>
-<h3>&#9318; Download and Install the Rewrite Module</h3>
-<p> Download and install the rewrite module (rewrite_amd64_en-US.msi) from the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> installation files </a> </p>
-<p><img width="386" alt="rewrite module" src="https://imgur.com/dM5GWpc.png"></p>
-<h3>&#9319; Create a new directory</h3>
-<p>Proceed to File Explorer and create the directory in "C:" naming the new folder "PHP" </p>
-<img width="647" alt="PHP" src="https://imgur.com/AP3sxXs.png">
+
+<h3>Install the Rewrite Module</h3>
+
+![image](https://github.com/user-attachments/assets/58b59768-0e19-4b7e-a5c3-d49ad7a34fd0)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/2e3b847f-3b06-4b09-8e6b-c49e61786cee)
+<br><br>
+
+- Install the Rewrite module from the osTicket Installation Files folder
+
+
+<h3>Create a new directory</h3>
+
+![image](https://github.com/user-attachments/assets/f855ae73-c1e9-4d15-80ca-20077dd4a683)
+<br><br>
+
+<p>- Open File Explorer and create a new folder "PHP" on the C:\ directory </p>
 <br>
 <br>
-<h3>&#9320; Download and install PHP 7.3.8 </h3>
-<p> Download and install php-7.3.8-nts-Win32-VC15-x86.zip from the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> installation files </a> and extract the contents into the newly created PHP folder </p>
-<img width="720" alt="PHP zip" src="https://imgur.com/AgERChE.png">
+<h3>Extract and Install PHP 7.3.8 </h3>
+
+![image](https://github.com/user-attachments/assets/e691f85a-3056-45b7-8b55-ec4a406e1fe7)
+<br><br>
+
+- Extract the PHP zip file into C:\PHP
 <br>
-<h3>&#9321; Download and install VC_redist.x86.exe </h3>
+<h3>Install VC_redist.x86.exe </h3>
+
+![image](https://github.com/user-attachments/assets/53af226a-985a-46d1-abbb-91de1619cd51)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/2fdb9b38-4734-41b0-8cc1-ec7f93d16838)
+<br><br>
+
+<h3>Install MySQL 5.5.62 </h3>
+
+![image](https://github.com/user-attachments/assets/8712a80f-1863-479b-a9e8-9556880ef035)
+
+![image](https://github.com/user-attachments/assets/a93ed846-e079-4565-9616-447d23ff3db7)
+<br><br>
+- Select "Typical" option.
+
+![image](https://github.com/user-attachments/assets/74f81681-d05c-44d7-8a17-4ee12dcf8f47)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/a21db650-7ca0-44ea-bc00-b401738ff2d3)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/ae25d1e6-db32-4794-b8b0-db822dc4585d)
+<br><br>
+
+- Launch the MySQL configuration wizard
+- Choose standard configuration
+
+![image](https://github.com/user-attachments/assets/86dfbffc-c860-4e84-8dcb-36ec5cce855e)
+<br><br>
+<strong>- Create username and password. Keep note of credentials. I used "root" for both to keep it simple.
+
+![image](https://github.com/user-attachments/assets/3a9ea359-c457-4eab-844c-2ba866927119)
+<br><br>
+
+<h3>Launch IIS as an administrator</h3>
+
+![image](https://github.com/user-attachments/assets/9ea88774-e13b-4641-874d-b08572f4ac17)
+<br><br>
+<p>- Search "IIS" in the Windows search bar, then right-click and select "Open as Administrator"</p>
 <br>
-<h3>&#9322; Download and install MySQL 5.5.62 </h3>
-<p> Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"> installation files </a>  and select the following configurations:</p>
-<p> Typical Setup -> Launch Configuration Wizard after install -> Standard Configuration
-</p>
-<br>
-<img width="420" alt="mysql" src="https://imgur.com/UXdU64D.png">
-<br>
-<h3>&#9323; Launch IIS as an administrator</h3>
-<p> Search IIS in the Windows search bar, then right click and select "Open as Administrator"</p>
-<br>
+
 <h3>&#9324; Register PHP Manager </h3>
 <br>
-<img width="720" alt="PHP registration 2" src="https://imgur.com/BEmvAuY.png">
+- We will register PHP from within IIS. This means we are making the web server aware of the existence of the PHP on the computer.
 
-<br>
-<br>
-<p><strong> NOTE: Registration will require you to provide a path to "php-cgie.exe". Lead it to the PHP folder previously created and you will find the file "php-cgi"
+![image](https://github.com/user-attachments/assets/9fa7b5f2-48dc-406f-b799-c8b74b39db4c)
+<br><br>
+
+![image](https://github.com/user-attachments/assets/c81b6f63-9d6a-40c0-8d93-ed34e6f994b7)
+<br><br>
+
+- Open PHP Manager
+- Click on Register New PHP
+
+![image](https://github.com/user-attachments/assets/99bbfaba-56c8-4809-be75-3229807c0e23)
+<br><br>
+<p><strong>- NOTE: Registration will require you to provide a path to "php-cgie.exe". Lead it to the PHP folder previously created and you will find the file "php-cgi"
 </strong></p>
 <br>
-<img width="700" alt="PHP path " src="https://imgur.com/Pewjk2r.png">
 
-<br>
-<p>
-</p> 
-<h3>&#9325; Restart the IIS server</h3>
-<p> The restart button can be found on the right side of the window under Actions -> Manage Server.</p>
-<br>
-<img width="623" alt="Restart IIS" src="https://imgur.com/KHl2nlC.png">
-<br>
+<h3>Restart the IIS server</h3>
+
+![image](https://github.com/user-attachments/assets/699a640b-0a78-48e6-bc9e-232e9c6fa2dd)
+<br><br>
+- The restart button can be found on the right side of the window under Actions and Manage Server.</p>
+
 <br>
 <h3>&#9326; Download and install osTicket</h3>
 <p> Download and install osTicket v1.15.8 from the installation files and extract the contents to c:\inetpub\wwwroot </p>
