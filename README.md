@@ -2,9 +2,11 @@
 </p>
 
 <h1>osTicket: Prerequisites and Installation</h1>
-This tutorial provides a step-by-step guide for setting up the prerequisites and installing osTicket, an open-source help desk ticketing system. It details the configuration of a Windows 10 virtual machine in Azure, the installation of necessary software like IIS, PHP Manager, and MySQL, and the final setup of osTicket. The guide ensures a comprehensive installation process for users setting up osTicket in a virtualized environment.<br />
-
-
+<br>
+This is a guide for setting up the prerequisites and installing osTicket, an open-source help desk ticketing system. 
+It details the configuration of a Windows 10 virtual machine in Azure, and the installation of necessary software like IIS, PHP Manager, MySQL, and osTicket. 
+The guide goes through the installation process for users setting up osTicket in a virtualized environment.
+<br>
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure Virtual Machine
@@ -37,7 +39,7 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 - The first step is to create a Virtual Machine (VM) on Azure.
 - Create a Resource Group - osTicket
 - Choose Windows 10 Pro, version 22H2.
-- Make sure to set the size to either 2 or 4 vcpus and 16 GiB memory. I chose 4 vcpus for better performance.
+- Set the size to 2 or 4 vcpus and 16 GiB memory. I chose 4 vcpus for better performance.
 
 
 ![image](https://github.com/user-attachments/assets/756a4c35-ae2b-49c2-98b3-1e72874e57fc)
@@ -265,7 +267,7 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 ![image](https://github.com/user-attachments/assets/b4d65f21-02ff-4f59-b6d1-8472cd1ce8ca)
 <br>
 - Refresh osTicket
-- After refreshing your web browser on osTicket, notice how more features are now available to use.
+- After refreshing your web browser on osTicket, notice more features are now available.
 
 
 <h3>Rename ost-config.php</h3>
@@ -299,7 +301,7 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 
 ![image](https://github.com/user-attachments/assets/c5b8d8c0-bca8-4384-b101-9b1c80f75044)
 <br>
-<p>- Continue through osTicket. Fill out the form.</p>
+<p>- Continue through osTicket. Complete the form.
 <p><strong>NOTE: The database credentials we'll fill out later.</strong> </p>
 <br>
 
@@ -311,8 +313,7 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 <br>
 ![image](https://github.com/user-attachments/assets/a1648c76-2701-41c9-906d-7354a17259ed)
 <br>
-- Open Heidi SQL and create a new session. Make sure to fill in the username as root and create a password. After filling up your credentials now click open and a new session should show up.
-<br>
+- Open Heidi SQL and create a new session. Fill in the username as root and create a password. After filling up your credentials, click open and a new session should show.
 <h3>Create new database </h3>
 
 ![image](https://github.com/user-attachments/assets/c1c6887d-da3a-4167-848f-ede97c53516c)
