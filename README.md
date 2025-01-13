@@ -215,19 +215,25 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 - The restart button can be found on the right side of the window under Actions and Manage Server.</p>
 
 <br>
-<h3>&#9326; Download and install osTicket</h3>
-<p> Download and install osTicket v1.15.8 from the installation files and extract the contents to c:\inetpub\wwwroot </p>
+<h3>Install osTicket</h3>
+
+![image](https://github.com/user-attachments/assets/af5f0ea4-cd82-41b1-8630-46751bcc995b)
 <br>
-<img width="547" alt="inetpub" src="https://imgur.com/KqDNCsS.png">
+
+![image](https://github.com/user-attachments/assets/6be083d4-a0d5-44f6-9d8b-4dc7f4b4bef2)
+<br>
+
+![image](https://github.com/user-attachments/assets/c376a2b3-0820-4ae6-86ec-cea3edd933ad)
+<br>
+<p>- Extract the contents of osTicket v1.15.8 from the installation files</p>
+- Copy the upload for to C:\intelpub\
+- Rename "upload" folder to "osTicket"
+<br>
+
+<h3>Restart the IIS Again.</h3>
 <br>
 <br>
-<p> Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”</p>
-<br>
-<h3>&#9327; Restart the IIS Again.</h3>
-<img width="623" alt="Restart IIS" src="https://imgur.com/KHl2nlC.png">
-<br>
-<br>
-<h3>&#9328; Launch osTicket </h3>
+<h3>Launch osTicket </h3>
 <p>Under Connections in IIS, VM-osTicket -> Sites -> Default Web Site -> osTicket</p>
 <img width="623" alt="osTicket" src="https://imgur.com/bgZrJzV.png">
 <p></p>
