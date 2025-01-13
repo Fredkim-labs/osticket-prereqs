@@ -220,98 +220,130 @@ This tutorial provides a step-by-step guide for setting up the prerequisites and
 ![image](https://github.com/user-attachments/assets/af5f0ea4-cd82-41b1-8630-46751bcc995b)
 <br>
 
-![image](https://github.com/user-attachments/assets/6be083d4-a0d5-44f6-9d8b-4dc7f4b4bef2)
-<br>
+![image](https://github.com/user-attachments/assets/8186aaac-c88a-4404-aa44-61d6b910c6d2)
 
-![image](https://github.com/user-attachments/assets/c376a2b3-0820-4ae6-86ec-cea3edd933ad)
 <br>
 <p>- Extract the contents of osTicket v1.15.8 from the installation files</p>
-- Copy the upload for to C:\intelpub\
+- Copy the upload for to C:\intelpub\wwwroot\
 - Rename "upload" folder to "osTicket"
 <br>
 
 <h3>Restart the IIS Again.</h3>
 <br>
-<br>
 <h3>Launch osTicket </h3>
-<p>Under Connections in IIS, VM-osTicket -> Sites -> Default Web Site -> osTicket</p>
-<img width="623" alt="osTicket" src="https://imgur.com/bgZrJzV.png">
-<p></p>
-<p><strong>NOTE: Click on osTicket</strong></p>
 
-<h3>&#9329; Select Browse *80 to launch osTicket</h3>
-<p> On the right side of the window, under Actions -> Manage Folder -> Click on Browse *:80 (http) </p>
-<img width="623" alt="browse80" src="https://imgur.com/yiQjEcK.png">
+![image](https://github.com/user-attachments/assets/4785e5d7-9258-44fe-95dc-bb8095f37d89)
 <br>
+- In IIS expand osTicket-VM, Sites, Default Websites, and click on osTicket
+<br>
+
+![image](https://github.com/user-attachments/assets/73a87817-4c6d-4a21-b129-571e047cee4c)
+<br>
+
+- The link is on the left side of the page under the Actions Tab. 
+- Click Browse *:80 (HTTP) to launch osTicket.
+<br>
+
+![image](https://github.com/user-attachments/assets/24bcf422-d4b0-45c5-b0d2-6d1a37077491)
 <br>
 <p><strong>This should lead to osTicket opening in a separate Windows broswer</strong>.</p>
 <br>
-<br>
-<img width="664" alt="osTicket browser" src="https://imgur.com/yOa0Jy8.png">
-<br>
-<br>
-<h3>&#9330; Enable extensions</h3>
-<p>Open IIS -> PHP Manager -> Select "Enable or Disable Extension". </p>
-<p>Enable the following extensions:</p>
-<p>[X]Enable: php_imap.dll</p>
-<p>[X]Enable: php_intl.dll</p>
-<p>[X]Enable: php_opcache.dll</p>
-<img width="273" alt="php enable 2" src="https://imgur.com/8QO0yIO.png">
-<br>
-<br>
-<h3>&#9331; Refresh osTicket</h3>
+<h3>Enable extensions</h3>
 
-<p>After refreshing your web browser on osTicket, notice how more features are now available to use.</p>
-<img width="608" alt="OSticket changes" src="https://imgur.com/bdJ05kP.png">
+![image](https://github.com/user-attachments/assets/c777ec3a-3616-475b-9028-8555f32df927)
 <br>
+- Open IIS, PHP Manager, and Select "Enable or Disable Extension". </p>
 <br>
 
-<h3>&#12881; Rename ost-config.php</h3>
+![image](https://github.com/user-attachments/assets/6a063609-d7b4-4e39-b833-278fa9d5cb97)
 
-<p> Under c:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, rename "ost-sampleconfig.php" to "ost-config.php"</p>
-<img width="527" alt="ostconfig rename" src="https://imgur.com/yP1YTT0.png">
+<p>- Enable the following extensions:</p>
+<p>- Enable: php_imap.dll</p>
+<p>- Enable: php_intl.dll</p>
+<p>- Enable: php_opcache.dll</p>
+
+![image](https://github.com/user-attachments/assets/b4d65f21-02ff-4f59-b6d1-8472cd1ce8ca)
 <br>
+- Refresh osTicket
+- After refreshing your web browser on osTicket, notice how more features are now available to use.
+
+
+<h3>Rename ost-config.php</h3>
+
+![image](https://github.com/user-attachments/assets/b4c97c22-7fad-4db8-a947-98c8547c517e)
+
+<strong>- Note: Not doing this step may cause osTicket to work properly.
+- Under c:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, rename "ost-sampleconfig.php" to "ost-config.php"</p>
+<br>
+<h3>Change ost-config.php permissions</h3>
+
+![image](https://github.com/user-attachments/assets/7d99ebb9-154c-41a1-b42e-4716c37b4634)
 <br>
 
-<h3>&#12882; Change ost-config.php permissions</h3>
-
-<p>Change ost-config.php permissions (right click)</p>
-<p>Properties -> Security -> Advance -> Disable Inheritance</p> 
-<p>Select "remove all inherited permissions" and add everyone as a principal. Select all boxes to ensure all permissions are granted. </p>
-<img width="571" alt="Permissions" src="https://imgur.com/mANNCMT.png">
-
-<h3>&#12883; Continue osTicket installation</h3>
-
-<p> Continue through osTicket filling out only the first half of the page to this point.</p>
-<img width="611" alt="osticket signup" src="https://imgur.com/m7WratO.png">
+![image](https://github.com/user-attachments/assets/d3144c6b-d780-44bd-8ac6-1fa43bb5e111)
 <br>
+- Right Click ost-config.php and select properties
+- Select "Security" tab and go into "Advance"
+- Click Disable Heritance and select "Remove all inherited permissions"
+
+![image](https://github.com/user-attachments/assets/937cd337-eee8-40a8-bc44-41d7193d0659)
 <br>
+![image](https://github.com/user-attachments/assets/cfa48bf8-5efc-46bf-972e-940874c3803a)
+<br>
+- Click Add, then select Principal.
+- Type everyone in the object name field and click check names.
+    - Note: Putting Everyone is not a good idea in a public setting. we are using it to keep the lab simple.
+- Check the Full Control box.
+
+<h3>Continue osTicket installation</h3>
+
+![image](https://github.com/user-attachments/assets/c5b8d8c0-bca8-4384-b101-9b1c80f75044)
+<br>
+<p>- Continue through osTicket. Fill out the form.</p>
 <p><strong>NOTE: The database credentials we'll fill out later.</strong> </p>
 <br>
 
-<h3>&#12884; Download and install Heidi SQL from the installation files</h3>
+<h3>Install Heidi SQL from the installation files</h3>
 
-<p>Open Heidi SQL and create a new session. Make sure to fill in the username as root and create a password. After filling up your credentials now click open and a new session should show up.
-</p>
+![image](https://github.com/user-attachments/assets/e82ff8e4-b358-4d8a-993c-23cb4cddb1b8)
+<br>
+![image](https://github.com/user-attachments/assets/afd0151c-fab4-4465-9476-d0c350216540)
+<br>
+![image](https://github.com/user-attachments/assets/a1648c76-2701-41c9-906d-7354a17259ed)
+<br>
+- Open Heidi SQL and create a new session. Make sure to fill in the username as root and create a password. After filling up your credentials now click open and a new session should show up.
+<br>
+<h3>Create new database </h3>
 
-<h3>&#12885; Create new database </h3>
+![image](https://github.com/user-attachments/assets/c1c6887d-da3a-4167-848f-ede97c53516c)
+<br>
+![image](https://github.com/user-attachments/assets/62f8083a-6024-44fb-9c62-cf83f849ce4d)
+<br>
+- On the left side of the window, right-click on "Unnamed" and click on "Database"
+- Type in "osTicket" 
+<br>
+<h3>Finish osTicket Install</h3>
 
-<p>On the left side of the window, right click on "Unnamed" and create a new database named "osTicket".</p>
-<img width="512" alt="SQL" src="https://imgur.com/AbElzBn.png">
+![image](https://github.com/user-attachments/assets/9e24dc6e-a219-4fd0-8c70-11d567f2e956)
+<br>
+- Fill out the rest of the form
+- MySQL Database - osTicket
+- MySQL Username - root
+- MySQL Password - root
+
+<p>Click install and osTicket should begin to set up. </p>
+
+![image](https://github.com/user-attachments/assets/2fd540fd-a557-481a-a0b4-a1d11f29b37e)
+<br>
+![image](https://github.com/user-attachments/assets/7ffc6024-20bf-4c9c-a919-493bde0c0c4b)
+<br>
+![image](https://github.com/user-attachments/assets/f85b00ca-ed7e-48bd-baaf-96a594f373e2)
 <br>
 <br>
-
-<h3>&#12886; Finish osTicket Sign-Up</h3>
-
-<p>Revert back to your osTicket browser and fill out the incomplete credentials.</p>
-<img width="375" alt="osticket final signup" src="https://imgur.com/B2A1SMM.png">
-
-
-<h3>&#12887; Finalize osTicket installation</h3>
-
-<p>Click install and osTicket should begin to setup. </p>
-
-
+<h1>Congratulations!! you just installed osTicket</h1>
 <br>
-<br>
-<h1>Congratulations!! &#127881; you just installed osTicket</h1>
+<strong>One step closer to becoming an awesome IT Tech!</strong>
+
+
+
+
